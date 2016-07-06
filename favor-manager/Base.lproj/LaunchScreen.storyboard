@@ -17,22 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favor Manager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="if0-BT-nXX">
-                                <rect key="frame" x="240" y="170" width="120" height="30"/>
-                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Zfl-9N-25e"/>
-                                    <constraint firstAttribute="width" constant="120" id="rhv-G2-MtS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favor Manager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocp-wh-pL9">
+                                <rect key="frame" x="193.5" y="280" width="213.5" height="39"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="if0-BT-nXX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bbh-j4-Wkr"/>
-                            <constraint firstItem="if0-BT-nXX" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="150" id="kKL-z8-Vje"/>
+                            <constraint firstItem="ocp-wh-pL9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="q1P-t0-2kB"/>
+                            <constraint firstItem="ocp-wh-pL9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="rsm-aB-JDa"/>
                         </constraints>
                     </view>
                 </viewController>
