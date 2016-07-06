@@ -19,4 +19,8 @@ class SignUpVC: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
+    }
+    
 }

@@ -9,6 +9,10 @@
 import Foundation
 import UIKit
 
-class WlcomeVC: UIViewController {
+class WelcomeVC: UIViewController {
+ 
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
+    }
     
 }
