@@ -51,6 +51,9 @@
                                         <state key="normal" title="Log In With Facebook">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="ZJA-QO-Wcg" kind="show" id="s4E-24-Qia"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEv-eB-PGQ">
                                         <rect key="frame" x="535" y="19" width="57" height="30"/>
@@ -144,6 +147,9 @@
                                 <state key="normal" title="Enter">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="ZJA-QO-Wcg" kind="show" id="ghA-bK-KXj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zn-L3-7tZ">
                                 <rect key="frame" x="20" y="20" width="46" height="30"/>
@@ -252,6 +258,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5H-rH-Mlo">
+                                <rect key="frame" x="207" y="226" width="186" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="a8b-P6-bdv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ggl-nd-MV8">
                                 <rect key="frame" x="207" y="322" width="186" height="30"/>
                                 <constraints>
@@ -269,20 +284,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIA-vt-lm3">
-                                <rect key="frame" x="239" y="417" width="123" height="49"/>
-                                <color key="backgroundColor" red="0.1058823529" green="0.56862745100000001" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="123" id="IOj-Av-Pmc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
-                                <state key="normal" title="Enter">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="enterButtonPressed:" destination="Lif-Tv-Nzm" eventType="touchUpInside" id="fng-Uz-DgN"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Nr-tE-9Ed">
                                 <rect key="frame" x="20" y="20" width="46" height="30"/>
                                 <constraints>
@@ -297,15 +298,21 @@
                                     <action selector="backButtonapped:" destination="Lif-Tv-Nzm" eventType="touchUpInside" id="bXm-re-0dv"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5H-rH-Mlo">
-                                <rect key="frame" x="207" y="226" width="186" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIA-vt-lm3">
+                                <rect key="frame" x="239" y="417" width="123" height="49"/>
+                                <color key="backgroundColor" red="0.1058823529" green="0.56862745100000001" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="a8b-P6-bdv"/>
+                                    <constraint firstAttribute="width" constant="123" id="IOj-Av-Pmc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButtonPressed:" destination="Lif-Tv-Nzm" eventType="touchUpInside" id="fng-Uz-DgN"/>
+                                    <segue destination="ZJA-QO-Wcg" kind="show" id="BXf-4t-Y1V"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.53333333329999999" green="0.25098039220000001" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -340,7 +347,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3w3-Ds-zNn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2564" y="1339"/>
+            <point key="canvasLocation" x="2564" y="1431"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ahN-Ju-YvD">
+            <objects>
+                <viewController id="ZJA-QO-Wcg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="73j-f1-ZVL"/>
+                        <viewControllerLayoutGuide type="bottom" id="VVq-Zm-dH9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1vX-Ok-E7x">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yuh-81-PcR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3356" y="1076"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="BXf-4t-Y1V"/>
+    </inferredMetricsTieBreakers>
 </document>
