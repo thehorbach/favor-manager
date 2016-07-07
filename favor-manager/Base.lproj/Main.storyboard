@@ -148,7 +148,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ZJA-QO-Wcg" kind="show" id="ghA-bK-KXj"/>
+                                    <action selector="enterButtonPressed:" destination="ab4-VW-I52" eventType="touchUpInside" id="PoY-1f-7Gy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zn-L3-7tZ">
@@ -206,6 +206,11 @@
                             <constraint firstItem="FMd-JH-cv2" firstAttribute="leading" secondItem="NTz-2v-aYs" secondAttribute="leading" id="vMf-N1-jIY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="NTz-2v-aYs" id="mzV-nV-w0w"/>
+                        <outlet property="passwordTextField" destination="aWW-Pd-rB4" id="Km4-wh-0ua"/>
+                        <segue destination="ZJA-QO-Wcg" kind="show" identifier="showFavorsVCfromLogIn" id="TWq-pw-2DN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Dj-91-4Ef" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -598,6 +603,6 @@
         <image name="add" width="299" height="282"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="p1c-Zs-96M"/>
+        <segue reference="TWq-pw-2DN"/>
     </inferredMetricsTieBreakers>
 </document>
