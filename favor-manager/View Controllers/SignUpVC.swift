@@ -21,14 +21,20 @@ class SignUpVC: UIViewController {
     
     @IBAction func enterButtonPressed(sender: UIButton) {
         if emailTextField.text != "" && passwordTextField.text != "" {
+            
             let email = emailTextField.text
             let password = passwordTextField.text
             
-            FIRAuth.auth()?.createUserWithEmail(email!, password: password!, completion: { (user, err) in
-                if let user = user {
-                    print("user is logged in \(user)")
-                }
-            })
+            if password == passwordAgainTextField.text {
+                FIRAuth.auth()?.createUserWithEmail(email!, password: password!, completion: { (user, err) in
+                    if let user = user {
+                        print("user is logged in \(user)")
+                        self.performSegueWithIdentifier("favorVCfromSignUp", sender: self)
+                    } else {
+                        print(err.debugDescription)
+                    }
+                })
+            }
             
             
         }

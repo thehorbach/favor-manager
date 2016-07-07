@@ -309,8 +309,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="enterButtonPressed:" destination="Lif-Tv-Nzm" eventType="touchUpInside" id="fng-Uz-DgN"/>
-                                    <segue destination="ZJA-QO-Wcg" kind="show" id="BXf-4t-Y1V"/>
+                                    <action selector="enterButtonPressed:" destination="Lif-Tv-Nzm" eventType="touchUpInside" id="jXl-Rw-z18"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -344,10 +343,16 @@
                             <constraint firstItem="zZL-Au-qXd" firstAttribute="top" secondItem="wgH-Gi-mr8" secondAttribute="bottom" constant="530" id="xpq-hI-Zap"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="MIf-LP-B1Y" id="9XM-w6-FLu"/>
+                        <outlet property="passwordAgainTextField" destination="ggl-nd-MV8" id="lf4-Yc-grL"/>
+                        <outlet property="passwordTextField" destination="qRu-Fk-Nzu" id="iHy-uX-ySO"/>
+                        <segue destination="ZJA-QO-Wcg" kind="show" identifier="favorVCfromSignUp" id="p1c-Zs-96M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3w3-Ds-zNn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2564" y="1431"/>
+            <point key="canvasLocation" x="2564" y="1441"/>
         </scene>
         <!--Show Favors TableVC-->
         <scene sceneID="ahN-Ju-YvD">
@@ -395,7 +400,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Gf-Yu-dlO" id="hnR-Kw-O1J">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="eMz-Dj-FqR" userLabel="Super Stack View">
@@ -593,6 +598,6 @@
         <image name="add" width="299" height="282"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="s4E-24-Qia"/>
+        <segue reference="p1c-Zs-96M"/>
     </inferredMetricsTieBreakers>
 </document>
