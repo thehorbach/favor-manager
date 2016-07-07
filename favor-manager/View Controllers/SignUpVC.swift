@@ -17,7 +17,17 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var passwordAgainTextField: UITextField!
     
     
+    override func viewDidLoad() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(EmailLogInVC.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
+    }
     
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+
     
     @IBAction func enterButtonPressed(sender: UIButton) {
         if emailTextField.text != "" && passwordTextField.text != "" {

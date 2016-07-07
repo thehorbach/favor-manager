@@ -30,7 +30,16 @@ class EmailLogInVC: UIViewController{
             
         }
     }
+    override func viewDidLoad() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(EmailLogInVC.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
+    }
     
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
     
     @IBAction func backButton(sender: UIButton) {
         self.dismissViewControllerAnimated(true, completion: nil)
