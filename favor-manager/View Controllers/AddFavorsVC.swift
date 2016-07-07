@@ -9,6 +9,10 @@
 import UIKit
 
 class AddFavorsVC: UIViewController {
+    @IBOutlet weak var favorTitle: UITextField!
+    @IBOutlet weak var favorPerson: UITextField!
+    @IBOutlet weak var favorDescription: UITextView!
+    @IBOutlet weak var favorDueDate: UIDatePicker!
 
     override func viewDidLoad() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AddFavorsVC.dismissKeyboard))
@@ -31,6 +35,8 @@ class AddFavorsVC: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 
+    @IBAction func addButtonTapped(sender: AnyObject) {
+    }
     /*
     // MARK: - Navigation
 

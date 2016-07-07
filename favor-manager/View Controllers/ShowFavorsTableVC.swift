@@ -10,6 +10,11 @@ import UIKit
 
 class ShowFavorsTableVC: UIViewController {
     
+    @IBOutlet weak var personName: UILabel!
+    @IBOutlet weak var favorName: UILabel!
+    @IBOutlet weak var dueDate: UILabel!
+    
+    
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
     }
