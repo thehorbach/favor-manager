@@ -8,16 +8,38 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 class SignUpVC: UIViewController {
     
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var passwordAgainTextField: UITextField!
+    
+    
+    
+    
     @IBAction func enterButtonPressed(sender: UIButton) {
-        
+        if emailTextField.text != "" && passwordTextField.text != "" {
+            let email = emailTextField.text
+            let password = passwordTextField.text
+            
+            FIRAuth.auth()?.createUserWithEmail(email!, password: password!, completion: { (user, err) in
+                if let user = user {
+                    print("user is logged in \(user)")
+                }
+            })
+            
+            
+        }
     }
     
     @IBAction func backButtonapped(sender: UIButton) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    
+    
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent

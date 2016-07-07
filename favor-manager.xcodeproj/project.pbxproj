@@ -71,7 +71,7 @@
 		1172F7B21D2D79450048CDA1 /* favor-manager */ = {
 			isa = PBXGroup;
 			children = (
-				3F7CCF2E1D2DA1330018D9B4 /* View Controllers */,
+				3F7CCF2E1D2DA1330018D9B4 /* Controllers */,
 				1172F7B31D2D79450048CDA1 /* AppDelegate.swift */,
 				1172F7B71D2D79450048CDA1 /* Main.storyboard */,
 				1172F7BA1D2D79450048CDA1 /* Assets.xcassets */,
@@ -82,7 +82,7 @@
 			path = "favor-manager";
 			sourceTree = "<group>";
 		};
-		3F7CCF2E1D2DA1330018D9B4 /* View Controllers */ = {
+		3F7CCF2E1D2DA1330018D9B4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				3F7CCF2F1D2DA1330018D9B4 /* AddFavorsVC.swift */,
@@ -91,6 +91,7 @@
 				58410A391D2DB18D00A1460F /* EmailLogInVC.swift */,
 				58410A3B1D2DBB4200A1460F /* SignUpVC.swift */,
 			);
+			name = Controllers;
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
