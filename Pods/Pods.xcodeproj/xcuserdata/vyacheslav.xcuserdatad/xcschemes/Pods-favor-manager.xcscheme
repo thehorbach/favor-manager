@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '6D43881BD447D34A9E16B0DF'
+               BlueprintIdentifier = '117680F6AC8BAD5746539C8D'
                BlueprintName = 'Pods-favor-manager'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_favor_manager.framework'>

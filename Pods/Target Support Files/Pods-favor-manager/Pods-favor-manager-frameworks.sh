@@ -82,3 +82,14 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-favor-manager/Bolts.framework"
+  install_framework "Pods-favor-manager/FBSDKCoreKit.framework"
+  install_framework "Pods-favor-manager/FBSDKLoginKit.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-favor-manager/Bolts.framework"
+  install_framework "Pods-favor-manager/FBSDKCoreKit.framework"
+  install_framework "Pods-favor-manager/FBSDKLoginKit.framework"
+fi

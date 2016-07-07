@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11364FE11D2F05BA0054714B /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11364FE01D2F05BA0054714B /* FirstVC.swift */; };
 		1172F7B41D2D79450048CDA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1172F7B31D2D79450048CDA1 /* AppDelegate.swift */; };
 		1172F7B91D2D79450048CDA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1172F7B71D2D79450048CDA1 /* Main.storyboard */; };
 		1172F7BB1D2D79450048CDA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1172F7BA1D2D79450048CDA1 /* Assets.xcassets */; };
@@ -15,13 +16,13 @@
 		3F7CCF311D2DA1330018D9B4 /* AddFavorsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7CCF2F1D2DA1330018D9B4 /* AddFavorsVC.swift */; };
 		3F7CCF321D2DA1330018D9B4 /* ShowFavorsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7CCF301D2DA1330018D9B4 /* ShowFavorsTableVC.swift */; };
 		4D3D0EC378F1B1F52D65F1BE /* Pods_favor_manager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29ECF2C6CFAB43819885263 /* Pods_favor_manager.framework */; };
-		58410A381D2DB13F00A1460F /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410A371D2DB13F00A1460F /* WelcomeVC.swift */; };
 		58410A3A1D2DB18D00A1460F /* EmailLogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410A391D2DB18D00A1460F /* EmailLogInVC.swift */; };
 		58410A3C1D2DBB4200A1460F /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410A3B1D2DBB4200A1460F /* SignUpVC.swift */; };
 		58C3F81A1D2EF9C800C98EF8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C3F8191D2EF9C800C98EF8 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11364FE01D2F05BA0054714B /* FirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
 		1172F7B01D2D79450048CDA1 /* favor-manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "favor-manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1172F7B31D2D79450048CDA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1172F7B81D2D79450048CDA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,7 +32,6 @@
 		1172F7C51D2D7B830048CDA1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3F7CCF2F1D2DA1330018D9B4 /* AddFavorsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFavorsVC.swift; sourceTree = "<group>"; };
 		3F7CCF301D2DA1330018D9B4 /* ShowFavorsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowFavorsTableVC.swift; sourceTree = "<group>"; };
-		58410A371D2DB13F00A1460F /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		58410A391D2DB18D00A1460F /* EmailLogInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailLogInVC.swift; sourceTree = "<group>"; };
 		58410A3B1D2DBB4200A1460F /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		58C3F8191D2EF9C800C98EF8 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -92,9 +92,9 @@
 			children = (
 				3F7CCF2F1D2DA1330018D9B4 /* AddFavorsVC.swift */,
 				3F7CCF301D2DA1330018D9B4 /* ShowFavorsTableVC.swift */,
-				58410A371D2DB13F00A1460F /* WelcomeVC.swift */,
 				58410A391D2DB18D00A1460F /* EmailLogInVC.swift */,
 				58410A3B1D2DBB4200A1460F /* SignUpVC.swift */,
+				11364FE01D2F05BA0054714B /* FirstVC.swift */,
 			);
 			name = Controllers;
 			path = "View Controllers";
@@ -264,12 +264,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				58410A3A1D2DB18D00A1460F /* EmailLogInVC.swift in Sources */,
+				11364FE11D2F05BA0054714B /* FirstVC.swift in Sources */,
 				1172F7B41D2D79450048CDA1 /* AppDelegate.swift in Sources */,
 				3F7CCF321D2DA1330018D9B4 /* ShowFavorsTableVC.swift in Sources */,
 				3F7CCF311D2DA1330018D9B4 /* AddFavorsVC.swift in Sources */,
 				58410A3C1D2DBB4200A1460F /* SignUpVC.swift in Sources */,
 				58C3F81A1D2EF9C800C98EF8 /* TableViewCell.swift in Sources */,
-				58410A381D2DB13F00A1460F /* WelcomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--WelcomeVC-->
+        <!--FirstVC-->
         <scene sceneID="9cM-ar-xnc">
             <objects>
-                <viewController id="y6d-F9-u9Z" customClass="WelcomeVC" customModule="favor_manager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="y6d-F9-u9Z" customClass="FirstVC" customModule="favor_manager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tMJ-FI-6JB"/>
                         <viewControllerLayoutGuide type="bottom" id="w15-0C-eg8"/>
@@ -41,7 +41,7 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHY-iD-nQH">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHY-iD-nQH" customClass="FBSDKLoginButton">
                                         <rect key="frame" x="0.0" y="530" width="600" height="70"/>
                                         <color key="backgroundColor" red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -52,7 +52,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="ZJA-QO-Wcg" kind="show" id="s4E-24-Qia"/>
+                                            <action selector="facebookButtonPressed:" destination="y6d-F9-u9Z" eventType="touchUpInside" id="20b-lJ-a5S"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEv-eB-PGQ">
@@ -93,6 +93,9 @@
                             <constraint firstItem="4cl-uf-BKz" firstAttribute="top" secondItem="oyg-ia-cK2" secondAttribute="top" id="k2c-4H-ezH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="facebookButton" destination="IHY-iD-nQH" id="y3u-TJ-Fo5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vF6-Pc-yoi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -405,7 +408,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Gf-Yu-dlO" id="hnR-Kw-O1J">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="eMz-Dj-FqR" userLabel="Super Stack View">
@@ -608,6 +611,6 @@
         <image name="add" width="299" height="282"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TWq-pw-2DN"/>
+        <segue reference="p1c-Zs-96M"/>
     </inferredMetricsTieBreakers>
 </document>

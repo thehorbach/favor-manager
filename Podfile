@@ -8,6 +8,8 @@ target 'favor-manager' do
 
 pod 'Firebase/Core’
 pod 'Firebase/Auth’
+pod 'FBSDKCoreKit’
+pod 'FBSDKLoginKit’
 
 end
 
