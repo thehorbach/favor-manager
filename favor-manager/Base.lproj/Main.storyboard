@@ -395,7 +395,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Gf-Yu-dlO" id="hnR-Kw-O1J">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="eMz-Dj-FqR" userLabel="Super Stack View">
@@ -468,7 +468,7 @@
                                 </constraints>
                                 <state key="normal" image="add"/>
                                 <connections>
-                                    <segue destination="Hmi-q4-kNA" kind="show" id="GRl-zb-vlf"/>
+                                    <segue destination="Hmi-q4-kNA" kind="presentation" id="8dl-4q-0Ut"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -504,86 +504,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4cW-Ch-BDr" userLabel="Super Stack View">
-                                <rect key="frame" x="20" y="20" width="560" height="521"/>
-                                <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8gz-Oj-SN5">
-                                        <rect key="frame" x="200" y="0.0" width="160" height="50"/>
-                                        <color key="backgroundColor" red="0.10588235294117647" green="0.58039215686274503" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="dBA-Dt-tDd"/>
-                                        </constraints>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Person" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Noh-8l-Wfd">
-                                        <rect key="frame" x="200" y="60" width="160" height="50"/>
-                                        <color key="backgroundColor" red="0.10588235294117647" green="0.58039215686274503" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="OmQ-FG-lIJ"/>
-                                        </constraints>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Here is where you put your favor" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kdu-Em-adg">
-                                        <rect key="frame" x="0.0" y="120" width="560" height="133"/>
-                                        <color key="backgroundColor" red="0.1058823529" green="0.58039215690000001" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="uye-eb-XND">
-                                        <rect key="frame" x="0.0" y="263" width="560" height="216"/>
-                                        <color key="backgroundColor" red="0.10588235294117647" green="0.58039215686274503" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                        <date key="date" timeIntervalSinceReferenceDate="489603767.73742402">
-                                            <!--2016-07-07 17:02:47 +0000-->
-                                        </date>
-                                    </datePicker>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hq5-D5-iqy">
-                                        <rect key="frame" x="200" y="489" width="160" height="32"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
-                                        <state key="normal" title="Add Favor">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.16862745098039217" green="0.51764705882352946" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Person" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Noh-8l-Wfd">
+                                <rect key="frame" x="107" y="84" width="387" height="30"/>
+                                <color key="backgroundColor" red="0.10588235294117647" green="0.58039215686274503" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Here is where you put your favor" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kdu-Em-adg">
+                                <rect key="frame" x="107" y="122" width="387" height="175"/>
+                                <color key="backgroundColor" red="0.1058823529" green="0.58039215690000001" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="uye-eb-XND">
+                                <rect key="frame" x="107" y="305" width="387" height="155"/>
+                                <color key="backgroundColor" red="0.10588235294117647" green="0.58039215686274503" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Noh-8l-Wfd" firstAttribute="leading" secondItem="4cW-Ch-BDr" secondAttribute="leading" constant="200" id="FDQ-bJ-6UK"/>
-                                    <constraint firstAttribute="bottom" secondItem="hq5-D5-iqy" secondAttribute="bottom" constant="10" id="Hjc-l1-bYz"/>
-                                    <constraint firstItem="8gz-Oj-SN5" firstAttribute="top" secondItem="4cW-Ch-BDr" secondAttribute="top" id="KS9-gq-kCW"/>
-                                    <constraint firstAttribute="trailing" secondItem="8gz-Oj-SN5" secondAttribute="trailing" constant="200" id="MpW-UF-WKa"/>
-                                    <constraint firstItem="uye-eb-XND" firstAttribute="top" secondItem="Kdu-Em-adg" secondAttribute="bottom" id="PJb-Jk-fPU"/>
-                                    <constraint firstItem="Kdu-Em-adg" firstAttribute="leading" secondItem="4cW-Ch-BDr" secondAttribute="leading" id="QOP-hX-57h"/>
-                                    <constraint firstItem="Kdu-Em-adg" firstAttribute="top" secondItem="Noh-8l-Wfd" secondAttribute="bottom" id="VuG-CD-TPc"/>
-                                    <constraint firstAttribute="trailing" secondItem="uye-eb-XND" secondAttribute="trailing" id="cqY-wP-RZW"/>
-                                    <constraint firstItem="8gz-Oj-SN5" firstAttribute="leading" secondItem="4cW-Ch-BDr" secondAttribute="leading" constant="200" id="dO1-wG-mI4"/>
-                                    <constraint firstAttribute="trailing" secondItem="Kdu-Em-adg" secondAttribute="trailing" id="eTS-7T-P2H"/>
-                                    <constraint firstAttribute="trailing" secondItem="hq5-D5-iqy" secondAttribute="trailing" constant="200" id="g7v-62-fHF"/>
-                                    <constraint firstAttribute="trailing" secondItem="Noh-8l-Wfd" secondAttribute="trailing" constant="200" id="hjk-zA-gWs"/>
-                                    <constraint firstItem="Noh-8l-Wfd" firstAttribute="top" secondItem="8gz-Oj-SN5" secondAttribute="bottom" id="pj9-0r-9Zo"/>
-                                    <constraint firstItem="uye-eb-XND" firstAttribute="leading" secondItem="4cW-Ch-BDr" secondAttribute="leading" id="scl-vH-zux"/>
-                                    <constraint firstItem="hq5-D5-iqy" firstAttribute="leading" secondItem="4cW-Ch-BDr" secondAttribute="leading" constant="200" id="twf-XB-a8E"/>
+                                    <constraint firstAttribute="height" constant="155" id="ApB-Xz-MCg"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="VuG-CD-TPc"/>
-                                        <exclude reference="pj9-0r-9Zo"/>
-                                        <exclude reference="PJb-Jk-fPU"/>
-                                        <exclude reference="Hjc-l1-bYz"/>
-                                    </mask>
-                                </variation>
-                            </stackView>
+                                <date key="date" timeIntervalSinceReferenceDate="489603767.73742402">
+                                    <!--2016-07-07 17:02:47 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hq5-D5-iqy">
+                                <rect key="frame" x="220" y="468" width="160" height="54"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="eSD-9w-7Rl"/>
+                                    <constraint firstAttribute="width" constant="160" id="jcT-zq-m4y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <state key="normal" title="Add Favor">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8gz-Oj-SN5">
+                                <rect key="frame" x="107" y="46" width="387" height="30"/>
+                                <color key="backgroundColor" red="0.10588235294117647" green="0.58039215686274503" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCM-3U-i8P">
+                                <rect key="frame" x="20" y="8" width="56" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="qxV-9r-bUc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButtonTapped:" destination="Hmi-q4-kNA" eventType="touchUpInside" id="QUN-6Y-rfN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1058823529" green="0.50196078430000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="4cW-Ch-BDr" firstAttribute="top" secondItem="kIA-bN-3Na" secondAttribute="bottom" id="0nf-2m-pbx"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4cW-Ch-BDr" secondAttribute="trailing" id="HZk-VR-Dqa"/>
-                            <constraint firstItem="4cW-Ch-BDr" firstAttribute="leading" secondItem="Xjm-W5-Esz" secondAttribute="leadingMargin" id="Ifj-FX-0Yc"/>
-                            <constraint firstItem="5KD-rv-yHW" firstAttribute="top" secondItem="4cW-Ch-BDr" secondAttribute="bottom" constant="10" id="pvE-d1-116"/>
+                            <constraint firstItem="8gz-Oj-SN5" firstAttribute="top" secondItem="kIA-bN-3Na" secondAttribute="bottom" constant="26" id="3B8-Iz-FgR"/>
+                            <constraint firstItem="Kdu-Em-adg" firstAttribute="trailing" secondItem="uye-eb-XND" secondAttribute="trailing" id="CLo-pH-6Rn"/>
+                            <constraint firstItem="Noh-8l-Wfd" firstAttribute="trailing" secondItem="Kdu-Em-adg" secondAttribute="trailing" id="EeR-0U-Cau"/>
+                            <constraint firstItem="hq5-D5-iqy" firstAttribute="top" secondItem="uye-eb-XND" secondAttribute="bottom" constant="8" symbolic="YES" id="Kns-lj-0mX"/>
+                            <constraint firstItem="Kdu-Em-adg" firstAttribute="top" secondItem="Noh-8l-Wfd" secondAttribute="bottom" constant="8" symbolic="YES" id="LbU-VH-Kgy"/>
+                            <constraint firstItem="8gz-Oj-SN5" firstAttribute="trailing" secondItem="Noh-8l-Wfd" secondAttribute="trailing" id="MVT-7U-6Ki"/>
+                            <constraint firstItem="8gz-Oj-SN5" firstAttribute="leading" secondItem="Noh-8l-Wfd" secondAttribute="leading" id="Oxw-In-FCE"/>
+                            <constraint firstItem="5KD-rv-yHW" firstAttribute="top" secondItem="hq5-D5-iqy" secondAttribute="bottom" constant="78" id="R10-JW-ypH"/>
+                            <constraint firstItem="uye-eb-XND" firstAttribute="top" secondItem="Kdu-Em-adg" secondAttribute="bottom" constant="8" symbolic="YES" id="Z1b-LH-n6u"/>
+                            <constraint firstItem="Noh-8l-Wfd" firstAttribute="leading" secondItem="Kdu-Em-adg" secondAttribute="leading" id="a9V-qw-TNI"/>
+                            <constraint firstItem="RCM-3U-i8P" firstAttribute="leading" secondItem="Xjm-W5-Esz" secondAttribute="leadingMargin" id="afS-1O-ONU"/>
+                            <constraint firstItem="8gz-Oj-SN5" firstAttribute="centerX" secondItem="Xjm-W5-Esz" secondAttribute="centerX" id="bRy-wI-88Q"/>
+                            <constraint firstItem="RCM-3U-i8P" firstAttribute="top" secondItem="Xjm-W5-Esz" secondAttribute="topMargin" constant="8" id="l6W-SW-2Y9"/>
+                            <constraint firstItem="Noh-8l-Wfd" firstAttribute="leading" secondItem="Xjm-W5-Esz" secondAttribute="leadingMargin" constant="87" id="nAo-k9-HGB"/>
+                            <constraint firstItem="uye-eb-XND" firstAttribute="centerX" secondItem="hq5-D5-iqy" secondAttribute="centerX" id="nDD-RI-ckQ"/>
+                            <constraint firstItem="Kdu-Em-adg" firstAttribute="leading" secondItem="uye-eb-XND" secondAttribute="leading" id="oSC-iN-Pj6"/>
+                            <constraint firstItem="5KD-rv-yHW" firstAttribute="top" secondItem="RCM-3U-i8P" secondAttribute="bottom" constant="562" id="qPO-nI-BVn"/>
+                            <constraint firstItem="Noh-8l-Wfd" firstAttribute="top" secondItem="8gz-Oj-SN5" secondAttribute="bottom" constant="8" symbolic="YES" id="wmG-PU-oIP"/>
                         </constraints>
                     </view>
                 </viewController>
