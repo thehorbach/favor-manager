@@ -18,6 +18,7 @@
 		58410A381D2DB13F00A1460F /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410A371D2DB13F00A1460F /* WelcomeVC.swift */; };
 		58410A3A1D2DB18D00A1460F /* EmailLogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410A391D2DB18D00A1460F /* EmailLogInVC.swift */; };
 		58410A3C1D2DBB4200A1460F /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410A3B1D2DBB4200A1460F /* SignUpVC.swift */; };
+		58C3F81A1D2EF9C800C98EF8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C3F8191D2EF9C800C98EF8 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		58410A371D2DB13F00A1460F /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		58410A391D2DB18D00A1460F /* EmailLogInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailLogInVC.swift; sourceTree = "<group>"; };
 		58410A3B1D2DBB4200A1460F /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		58C3F8191D2EF9C800C98EF8 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		7BCFEB3A2D60562C34DF06F1 /* Pods-favor-manager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-favor-manager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-favor-manager/Pods-favor-manager.debug.xcconfig"; sourceTree = "<group>"; };
 		B29ECF2C6CFAB43819885263 /* Pods_favor_manager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_favor_manager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF3275C01DDF15ABC6BC8ACD /* Pods-favor-manager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-favor-manager.release.xcconfig"; path = "Pods/Target Support Files/Pods-favor-manager/Pods-favor-manager.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 		58C3F8181D2EF8C100C98EF8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				58C3F8191D2EF9C800C98EF8 /* TableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				3F7CCF321D2DA1330018D9B4 /* ShowFavorsTableVC.swift in Sources */,
 				3F7CCF311D2DA1330018D9B4 /* AddFavorsVC.swift in Sources */,
 				58410A3C1D2DBB4200A1460F /* SignUpVC.swift in Sources */,
+				58C3F81A1D2EF9C800C98EF8 /* TableViewCell.swift in Sources */,
 				58410A381D2DB13F00A1460F /* WelcomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
