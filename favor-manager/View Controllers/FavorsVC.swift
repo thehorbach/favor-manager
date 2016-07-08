@@ -15,25 +15,16 @@ class FavorsVC: MainViewControllerClass {
     @IBOutlet weak var dueDate: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        
     }
 }
 
 extension FavorsVC: UITableViewDelegate, UITableViewDataSource {
-    
-    // MARK: - Table view data source
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -47,9 +38,6 @@ extension FavorsVC: UITableViewDelegate, UITableViewDataSource {
     //THIS WILL ALSO CHANGE WHEN WE GET DATA
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("favorCell", forIndexPath: indexPath)
-//        let post = posts[indexPath.row]
-//        cell.textLabel?.text = "\(post.item1!) + \(post.item2!)"
-//        cell.detailTextLabel?.text = "Likes: \(post.likes)"
         
         return cell
     }

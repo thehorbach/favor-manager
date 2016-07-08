@@ -139,12 +139,12 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NTz-2v-aYs">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NTz-2v-aYs" customClass="MainTextFieldClass" customModule="favor_manager" customModuleProvider="target">
                                 <rect key="frame" x="207" y="185" width="186" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ufi-Nh-q4v"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="926-kv-7BT">
@@ -157,14 +157,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGf-V8-11y">
-                                <rect key="frame" x="220" y="403" width="160" height="55"/>
+                                <rect key="frame" x="0.0" y="545" width="600" height="55"/>
                                 <color key="backgroundColor" red="0.086274509803921567" green="0.62745098039215685" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="1gf-Ua-ULm"/>
-                                    <constraint firstAttribute="height" constant="55" id="ES9-Ef-BjA"/>
+                                    <constraint firstAttribute="height" constant="55" id="SxG-vQ-3ki"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
-                                <state key="normal" title="Enter">
+                                <state key="normal" title="Login Now!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -194,20 +193,20 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aWW-Pd-rB4">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aWW-Pd-rB4" customClass="MainTextFieldClass" customModule="favor_manager" customModuleProvider="target">
                                 <rect key="frame" x="207" y="289" width="186" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Vjp-Er-Ddt"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.60784313725490191" green="0.34901960784313724" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="9zn-L3-7tZ" firstAttribute="top" secondItem="SUf-V3-MCZ" secondAttribute="bottom" id="2L6-cL-qQA"/>
+                            <constraint firstItem="LGf-V8-11y" firstAttribute="leading" secondItem="b0g-4k-JKB" secondAttribute="leading" id="30i-FO-7mU"/>
                             <constraint firstItem="aWW-Pd-rB4" firstAttribute="top" secondItem="926-kv-7BT" secondAttribute="bottom" constant="8" symbolic="YES" id="4GU-bD-sTL"/>
-                            <constraint firstItem="LGf-V8-11y" firstAttribute="top" secondItem="aWW-Pd-rB4" secondAttribute="bottom" constant="84" id="7Rb-yN-fk8"/>
                             <constraint firstItem="NTz-2v-aYs" firstAttribute="top" secondItem="FMd-JH-cv2" secondAttribute="bottom" constant="8" symbolic="YES" id="9B2-Vz-uEb"/>
                             <constraint firstItem="pca-UK-YRi" firstAttribute="centerX" secondItem="b0g-4k-JKB" secondAttribute="centerX" id="C5N-70-hEd"/>
                             <constraint firstItem="NTz-2v-aYs" firstAttribute="trailing" secondItem="926-kv-7BT" secondAttribute="trailing" id="DhN-NE-5y0"/>
@@ -218,10 +217,11 @@
                             <constraint firstItem="926-kv-7BT" firstAttribute="trailing" secondItem="aWW-Pd-rB4" secondAttribute="trailing" id="bbn-HP-YZb"/>
                             <constraint firstItem="9zn-L3-7tZ" firstAttribute="leading" secondItem="b0g-4k-JKB" secondAttribute="leadingMargin" id="dxq-IA-jBb"/>
                             <constraint firstItem="926-kv-7BT" firstAttribute="top" secondItem="NTz-2v-aYs" secondAttribute="bottom" constant="45" id="f8E-aZ-eNL"/>
-                            <constraint firstItem="aWW-Pd-rB4" firstAttribute="centerX" secondItem="LGf-V8-11y" secondAttribute="centerX" id="gMH-hL-wCk"/>
                             <constraint firstItem="NTz-2v-aYs" firstAttribute="leading" secondItem="926-kv-7BT" secondAttribute="leading" id="hP7-au-Lyr"/>
+                            <constraint firstItem="dLr-ut-8Zx" firstAttribute="top" secondItem="LGf-V8-11y" secondAttribute="bottom" id="kLg-E8-Y9G"/>
                             <constraint firstItem="FMd-JH-cv2" firstAttribute="trailing" secondItem="NTz-2v-aYs" secondAttribute="trailing" id="pGW-0j-bLr"/>
                             <constraint firstItem="dLr-ut-8Zx" firstAttribute="top" secondItem="9zn-L3-7tZ" secondAttribute="bottom" constant="550" id="swj-Rv-xtS"/>
+                            <constraint firstAttribute="trailing" secondItem="LGf-V8-11y" secondAttribute="trailing" id="v4x-nM-Xb1"/>
                             <constraint firstItem="FMd-JH-cv2" firstAttribute="leading" secondItem="NTz-2v-aYs" secondAttribute="leading" id="vMf-N1-jIY"/>
                         </constraints>
                     </view>
@@ -235,10 +235,10 @@
             </objects>
             <point key="canvasLocation" x="2564" y="647"/>
         </scene>
-        <!--Sign UpVC-->
+        <!--Email SignupVC-->
         <scene sceneID="vyO-Ar-za7">
             <objects>
-                <viewController id="Lif-Tv-Nzm" customClass="SignUpVC" customModule="favor_manager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Lif-Tv-Nzm" customClass="EmailSignupVC" customModule="favor_manager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XN4-Gh-Y9W"/>
                         <viewControllerLayoutGuide type="bottom" id="zZL-Au-qXd"/>
@@ -256,12 +256,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MIf-LP-B1Y">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MIf-LP-B1Y" customClass="MainTextFieldClass" customModule="favor_manager" customModuleProvider="target">
                                 <rect key="frame" x="207" y="188" width="186" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ehk-BF-bOk"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fhx-Qu-eRS">
@@ -274,12 +274,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qRu-Fk-Nzu">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qRu-Fk-Nzu" customClass="MainTextFieldClass" customModule="favor_manager" customModuleProvider="target">
                                 <rect key="frame" x="207" y="255" width="186" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="eHG-dH-q98"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5H-rH-Mlo">
@@ -291,12 +291,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ggl-nd-MV8">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ggl-nd-MV8" customClass="MainTextFieldClass" customModule="favor_manager" customModuleProvider="target">
                                 <rect key="frame" x="207" y="322" width="186" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="LkZ-I9-1CC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Re-Type Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsg-Ny-rf9">
@@ -319,33 +319,32 @@
                                 </state>
                                 <connections>
                                     <action selector="backButton:" destination="ab4-VW-I52" eventType="touchUpInside" id="gpa-IM-faS"/>
-                                    <action selector="backButtonapped:" destination="Lif-Tv-Nzm" eventType="touchUpInside" id="bXm-re-0dv"/>
+                                    <action selector="backButtonapped:" destination="Lif-Tv-Nzm" eventType="touchUpInside" id="85p-9Q-fF3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIA-vt-lm3">
-                                <rect key="frame" x="220" y="417" width="160" height="55"/>
+                                <rect key="frame" x="0.0" y="545" width="600" height="55"/>
                                 <color key="backgroundColor" red="0.086274509803921567" green="0.62745098039215685" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="6a5-FA-byv"/>
-                                    <constraint firstAttribute="width" constant="160" id="IOj-Av-Pmc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
-                                <state key="normal" title="Enter">
+                                <state key="normal" title="Signup Now!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="enterButtonPressed:" destination="Lif-Tv-Nzm" eventType="touchUpInside" id="jXl-Rw-z18"/>
+                                    <action selector="enterButtonPressed:" destination="Lif-Tv-Nzm" eventType="touchUpInside" id="jeC-sy-Ol5"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.60784313725490191" green="0.34901960784313724" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="WIA-vt-lm3" firstAttribute="top" secondItem="ggl-nd-MV8" secondAttribute="bottom" constant="65" id="0ys-bQ-1cs"/>
                             <constraint firstItem="MIf-LP-B1Y" firstAttribute="top" secondItem="Fhx-Qu-eRS" secondAttribute="bottom" constant="8" symbolic="YES" id="1BN-wv-mxW"/>
+                            <constraint firstAttribute="trailing" secondItem="WIA-vt-lm3" secondAttribute="trailing" id="1hm-Zu-amH"/>
                             <constraint firstItem="S5H-rH-Mlo" firstAttribute="trailing" secondItem="qRu-Fk-Nzu" secondAttribute="trailing" id="2qm-gf-BHo"/>
-                            <constraint firstItem="ggl-nd-MV8" firstAttribute="centerX" secondItem="WIA-vt-lm3" secondAttribute="centerX" id="4Bh-kU-5WT"/>
                             <constraint firstItem="4Nr-tE-9Ed" firstAttribute="leading" secondItem="QKV-mZ-xAw" secondAttribute="leadingMargin" id="4QP-sG-hVw"/>
                             <constraint firstItem="Hsg-Ny-rf9" firstAttribute="leading" secondItem="ggl-nd-MV8" secondAttribute="leading" id="Bmj-rw-Kaa"/>
+                            <constraint firstItem="zZL-Au-qXd" firstAttribute="top" secondItem="WIA-vt-lm3" secondAttribute="bottom" id="E1U-uh-ICn"/>
                             <constraint firstItem="Fhx-Qu-eRS" firstAttribute="trailing" secondItem="MIf-LP-B1Y" secondAttribute="trailing" id="FYg-ab-v0g"/>
                             <constraint firstItem="Hsg-Ny-rf9" firstAttribute="trailing" secondItem="ggl-nd-MV8" secondAttribute="trailing" id="GKq-yP-5g1"/>
                             <constraint firstItem="qRu-Fk-Nzu" firstAttribute="top" secondItem="S5H-rH-Mlo" secondAttribute="bottom" constant="8" symbolic="YES" id="Hco-Ii-1Hp"/>
@@ -353,6 +352,7 @@
                             <constraint firstItem="Fhx-Qu-eRS" firstAttribute="top" secondItem="wgH-Gi-mr8" secondAttribute="bottom" constant="89" id="SFT-Pt-i1S"/>
                             <constraint firstItem="Hsg-Ny-rf9" firstAttribute="top" secondItem="qRu-Fk-Nzu" secondAttribute="bottom" constant="8" symbolic="YES" id="Teg-Kf-Bhk"/>
                             <constraint firstItem="Fhx-Qu-eRS" firstAttribute="leading" secondItem="MIf-LP-B1Y" secondAttribute="leading" id="bKo-4J-TDG"/>
+                            <constraint firstItem="WIA-vt-lm3" firstAttribute="leading" secondItem="QKV-mZ-xAw" secondAttribute="leading" id="cO0-PI-5j1"/>
                             <constraint firstItem="wgH-Gi-mr8" firstAttribute="top" secondItem="XN4-Gh-Y9W" secondAttribute="bottom" constant="8" symbolic="YES" id="d2e-RR-343"/>
                             <constraint firstItem="qRu-Fk-Nzu" firstAttribute="leading" secondItem="Hsg-Ny-rf9" secondAttribute="leading" id="d8o-RR-8kN"/>
                             <constraint firstItem="ggl-nd-MV8" firstAttribute="top" secondItem="Hsg-Ny-rf9" secondAttribute="bottom" constant="8" symbolic="YES" id="e0r-Hy-rUO"/>
@@ -374,9 +374,9 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="emailTextField" destination="MIf-LP-B1Y" id="9XM-w6-FLu"/>
-                        <outlet property="passwordAgainTextField" destination="ggl-nd-MV8" id="lf4-Yc-grL"/>
-                        <outlet property="passwordTextField" destination="qRu-Fk-Nzu" id="iHy-uX-ySO"/>
+                        <outlet property="emailTextField" destination="MIf-LP-B1Y" id="dvY-Va-v0K"/>
+                        <outlet property="passwordAgainTextField" destination="ggl-nd-MV8" id="Q2h-h8-KRe"/>
+                        <outlet property="passwordTextField" destination="qRu-Fk-Nzu" id="Iap-Wv-tcd"/>
                         <segue destination="ZJA-QO-Wcg" kind="show" identifier="favorVCfromSignUp" id="p1c-Zs-96M"/>
                     </connections>
                 </viewController>
@@ -509,7 +509,7 @@
                                     <constraint firstAttribute="height" constant="50" id="Bnx-g4-Clo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
-                                <state key="normal" title="+Add Favor">
+                                <state key="normal" title="+ Add Favor">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -549,7 +549,7 @@
                         <viewControllerLayoutGuide type="top" id="kIA-bN-3Na"/>
                         <viewControllerLayoutGuide type="bottom" id="5KD-rv-yHW"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Xjm-W5-Esz">
+                    <view key="view" contentMode="scaleToFill" id="Xjm-W5-Esz" customClass="MainTextFieldClass" customModule="favor_manager" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -568,11 +568,11 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Qcv-o4-aQj">
-                                <rect key="frame" x="35" y="68" width="530" height="468"/>
+                                <rect key="frame" x="35" y="68" width="530" height="408"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name the favor" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8gz-Oj-SN5">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name the favor" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8gz-Oj-SN5" customClass="MainTextFieldClass" customModule="favor_manager" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="530" height="30"/>
-                                        <color key="backgroundColor" red="0.55686274509803924" green="0.26666666666666666" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.5568627451" green="0.2666666667" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="YgO-BS-DCK"/>
                                         </constraints>
@@ -580,8 +580,8 @@
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Who did the favor?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Noh-8l-Wfd">
-                                        <rect key="frame" x="0.0" y="43" width="530" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Who did the favor?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Noh-8l-Wfd" customClass="MainTextFieldClass" customModule="favor_manager" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="46" width="530" height="30"/>
                                         <color key="backgroundColor" red="0.5568627451" green="0.2666666667" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Va9-ba-SP0"/>
@@ -590,8 +590,8 @@
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Give more details about the favor so you don't forget anything..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kdu-Em-adg">
-                                        <rect key="frame" x="0.0" y="87" width="530" height="175"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Give more details about the favor so you don't forget anything..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kdu-Em-adg" customClass="MainTextViewClass" customModule="favor_manager" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="530" height="175"/>
                                         <color key="backgroundColor" red="0.5568627451" green="0.2666666667" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="175" id="2IH-kU-TYZ"/>
@@ -601,7 +601,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="UyM-jc-fbk">
-                                        <rect key="frame" x="0.0" y="275" width="530" height="125"/>
+                                        <rect key="frame" x="0.0" y="283" width="530" height="125"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose the due date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWr-0B-jm6">
                                                 <rect key="frame" x="0.0" y="0.0" width="530" height="25"/>
@@ -618,9 +618,9 @@
                                                     </mask>
                                                 </variation>
                                             </label>
-                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="uye-eb-XND">
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="uye-eb-XND">
                                                 <rect key="frame" x="0.0" y="25" width="530" height="100"/>
-                                                <color key="backgroundColor" red="0.10588235294117647" green="0.58039215686274503" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="tintColor" red="0.35294117650000001" green="0.12941176469999999" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="lMr-C5-K54"/>
                                                 </constraints>
@@ -636,43 +636,52 @@
                                             <constraint firstItem="nWr-0B-jm6" firstAttribute="leading" secondItem="UyM-jc-fbk" secondAttribute="leading" id="xQg-Sc-9zV"/>
                                         </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hq5-D5-iqy">
-                                        <rect key="frame" x="0.0" y="413" width="530" height="55"/>
-                                        <color key="backgroundColor" red="0.086274509803921567" green="0.62745098039215685" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="55" id="eSD-9w-7Rl"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
-                                        <state key="normal" title="Add Favor">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="8gz-Oj-SN5" firstAttribute="leading" secondItem="Qcv-o4-aQj" secondAttribute="leading" id="0PT-R0-SNK"/>
                                     <constraint firstItem="Kdu-Em-adg" firstAttribute="leading" secondItem="Qcv-o4-aQj" secondAttribute="leading" id="0eV-hs-52S"/>
-                                    <constraint firstItem="hq5-D5-iqy" firstAttribute="leading" secondItem="Qcv-o4-aQj" secondAttribute="leading" id="3wI-jB-K00"/>
                                     <constraint firstAttribute="trailing" secondItem="UyM-jc-fbk" secondAttribute="trailing" id="ED7-wn-7qd"/>
                                     <constraint firstItem="Noh-8l-Wfd" firstAttribute="leading" secondItem="Qcv-o4-aQj" secondAttribute="leading" id="RfM-00-Uch"/>
                                     <constraint firstAttribute="trailing" secondItem="Kdu-Em-adg" secondAttribute="trailing" id="TuM-mp-1S0"/>
                                     <constraint firstItem="UyM-jc-fbk" firstAttribute="leading" secondItem="Qcv-o4-aQj" secondAttribute="leading" id="Z3b-Fl-CVD"/>
-                                    <constraint firstAttribute="trailing" secondItem="hq5-D5-iqy" secondAttribute="trailing" id="fGr-mp-fG5"/>
-                                    <constraint firstAttribute="bottom" secondItem="hq5-D5-iqy" secondAttribute="bottom" id="kZa-e4-5vR"/>
                                     <constraint firstAttribute="trailing" secondItem="Noh-8l-Wfd" secondAttribute="trailing" id="mzM-vl-epY"/>
                                     <constraint firstAttribute="trailing" secondItem="8gz-Oj-SN5" secondAttribute="trailing" id="shL-29-Jlw"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hq5-D5-iqy">
+                                <rect key="frame" x="0.0" y="496" width="600" height="55"/>
+                                <color key="backgroundColor" red="0.086274509803921567" green="0.62745098039215685" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="eSD-9w-7Rl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
+                                <state key="normal" title="Add Favor">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.60784313725490191" green="0.34901960784313724" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hq5-D5-iqy" secondAttribute="trailing" id="Iqa-TI-Q8Y"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Qcv-o4-aQj" secondAttribute="trailing" constant="15" id="MjZ-PB-unZ"/>
+                            <constraint firstItem="hq5-D5-iqy" firstAttribute="top" secondItem="Qcv-o4-aQj" secondAttribute="bottom" constant="20" id="NHN-pS-Dzf"/>
                             <constraint firstItem="5KD-rv-yHW" firstAttribute="top" secondItem="Qcv-o4-aQj" secondAttribute="bottom" constant="15" id="NyM-PX-viB"/>
+                            <constraint firstItem="5KD-rv-yHW" firstAttribute="top" secondItem="hq5-D5-iqy" secondAttribute="bottom" id="QDG-ZN-bxP"/>
                             <constraint firstItem="Qcv-o4-aQj" firstAttribute="top" secondItem="RCM-3U-i8P" secondAttribute="bottom" constant="20" id="Tp2-xm-ebh"/>
                             <constraint firstItem="RCM-3U-i8P" firstAttribute="leading" secondItem="Xjm-W5-Esz" secondAttribute="leadingMargin" id="V1j-5F-DNG"/>
                             <constraint firstItem="Qcv-o4-aQj" firstAttribute="leading" secondItem="Xjm-W5-Esz" secondAttribute="leadingMargin" constant="15" id="bmS-5F-O8r"/>
                             <constraint firstItem="RCM-3U-i8P" firstAttribute="top" secondItem="Xjm-W5-Esz" secondAttribute="topMargin" constant="8" id="qLF-7Z-Mzl"/>
+                            <constraint firstItem="hq5-D5-iqy" firstAttribute="leading" secondItem="Xjm-W5-Esz" secondAttribute="leading" id="zxq-Q0-nzz"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="NyM-PX-viB"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="uye-eb-XND" id="dss-OG-G2X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SeG-pb-TmM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -683,6 +692,6 @@
         <image name="Bucket" width="579" height="579"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="p1c-Zs-96M"/>
+        <segue reference="A2q-oO-EOF"/>
     </inferredMetricsTieBreakers>
 </document>

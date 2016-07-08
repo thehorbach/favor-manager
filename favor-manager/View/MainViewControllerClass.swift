@@ -12,12 +12,11 @@ class MainViewControllerClass: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        
-      self.view.layer.cornerRadius = 10
-      self.view.layer.masksToBounds = true
+    }
     
+    override func viewWillAppear(animated: Bool) {
+        self.view.layer.cornerRadius = 10
+        self.view.layer.masksToBounds = true
     }
     
     override func prefersStatusBarHidden() -> Bool {

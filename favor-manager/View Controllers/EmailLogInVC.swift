@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class EmailLogInVC: MainViewControllerClass{
+class EmailLogInVC: MainViewControllerClass {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!

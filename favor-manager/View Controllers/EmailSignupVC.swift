@@ -1,15 +1,15 @@
 //
-//  SignUpVC.swift
+//  EmailSignupVC.swift
 //  favor-manager
 //
-//  Created by JoeB on 7/6/16.
+//  Created by Vyacheslav Horbach on 08/07/16.
 //  Copyright © 2016 Vyacheslav Horbach. All rights reserved.
 //
 
 import UIKit
 import Firebase
 
-class SignUpVC: MainViewControllerClass {
+class EmailSignupVC: MainViewControllerClass {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -26,7 +26,7 @@ class SignUpVC: MainViewControllerClass {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
     }
-
+    
     
     @IBAction func enterButtonPressed(sender: UIButton) {
         if emailTextField.text != "" && passwordTextField.text != "" {
@@ -52,5 +52,5 @@ class SignUpVC: MainViewControllerClass {
     @IBAction func backButtonapped(sender: UIButton) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-    
+
 }
