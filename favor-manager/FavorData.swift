@@ -17,7 +17,7 @@ class FavorData {
     private var _dueDate: NSDate!
     private var _key: String!
     
-    private var _favorRef: Firebase!
+ //   private var _favorRef: Firebase!
     
     var title: String! {
         return _title
@@ -41,7 +41,5 @@ class FavorData {
         self._description = description
         self._dueDate = dueDate
     }
-    
-    self._favorRef = DataService.dataService.ref.childByAppendingPath(self._jokeKey)
 }
 

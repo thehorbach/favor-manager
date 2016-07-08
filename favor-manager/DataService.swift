@@ -9,9 +9,9 @@
 import Foundation
 import Firebase
 
+/*
 class DataService {
     static let dataService = DataService()
-    
     private var _BASE_REF = Firebase(url: "https://favor-manager.firebaseio.com/")
     private var _USER_REF = Firebase(url: "https://favor-manager.firebaseio.com//user")
     private var _FAVOR_REF = Firebase(url: "https://favor-manager.firebaseio.com/favor")
@@ -34,5 +34,6 @@ class DataService {
     
     var FAVOR_REF: Firebase {
         return _FAVOR_REF
+        
     }
-}
+} */

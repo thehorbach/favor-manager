@@ -19,7 +19,7 @@ class AddFavorsVC: MainViewControllerClass {
     
     var favor: FavorData!
     
-  //  let ref = FIRDatabase.database().reference()
+    let ref = FIRDatabase.database().reference()
     
     let darkColor = UIColor(red: 90.0/255.0, green: 33.0/255.0, blue: 122.0/255.0, alpha: 0.7)
     
@@ -57,14 +57,7 @@ class AddFavorsVC: MainViewControllerClass {
         
         self.favor = FavorData(title: favorTitle.text!, person: favorPerson.text!, description: favorDescription.text!, dueDate: datePicker.date)
         
-//        self.ref.child("favor").childByAutoId().setValue(["favorName": favorTitle.text!])
-//        self.ref.child("favor").childByAutoId().setValue(["favorDescription": favorDescription.text!])
-//        self.ref.child("favor").childByAutoId().setValue(["favorTag": favorPerson.text!])
-//        self.ref.child("favor").childByAutoId().setValue(["favorDue": String(datePicker.date)])
-        
-  //      let newFavor = ref.child("favor").childByAutoId()
-        
-    //    newFavor.setValue(self.favor)
+        self.ref.child("favor").childByAutoId().setValue(["favorDescription": favorTitle.text!, "favorDue": "\(datePicker.date)", "favorNanem": favorTitle.text!, "favorTag": favorPerson.text!])
     }
     
     
