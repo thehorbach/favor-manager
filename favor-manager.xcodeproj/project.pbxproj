@@ -98,11 +98,11 @@
 		3F7CCF2E1D2DA1330018D9B4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3F7CCF2F1D2DA1330018D9B4 /* AddFavorsVC.swift */,
-				3F7CCF301D2DA1330018D9B4 /* FavorsVC.swift */,
+				11364FE01D2F05BA0054714B /* FirstVC.swift */,
 				58410A391D2DB18D00A1460F /* EmailLogInVC.swift */,
 				11364FF21D2F87D20054714B /* EmailSignupVC.swift */,
-				11364FE01D2F05BA0054714B /* FirstVC.swift */,
+				3F7CCF301D2DA1330018D9B4 /* FavorsVC.swift */,
+				3F7CCF2F1D2DA1330018D9B4 /* AddFavorsVC.swift */,
 			);
 			name = Controllers;
 			path = "View Controllers";

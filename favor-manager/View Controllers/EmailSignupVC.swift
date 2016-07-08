@@ -15,6 +15,7 @@ class EmailSignupVC: MainViewControllerClass {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordAgainTextField: UITextField!
     
+
     
     override func viewDidLoad() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(EmailLogInVC.dismissKeyboard))

@@ -12,6 +12,8 @@ class FavorsVC: MainViewControllerClass {
     
     @IBOutlet weak var tableView: UITableView!
     
+    var array: [FavorData]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
