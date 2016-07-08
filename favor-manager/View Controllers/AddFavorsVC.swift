@@ -34,7 +34,7 @@ class AddFavorsVC: MainViewControllerClass {
         view.addGestureRecognizer(tap)
         
         self.datePicker.setValue(darkColor, forKey: "textColor")
-        self.datePicker.sendAction("setHighlightsToday:", to: nil, forEvent: nil)
+        self.datePicker.sendAction(Selector("setHighlightsToday:"), to: nil, forEvent: nil)
         
     }
     
@@ -55,9 +55,17 @@ class AddFavorsVC: MainViewControllerClass {
 
     @IBAction func addButtonTapped(sender: AnyObject) {
         
-        self.favor = FavorData(title: favorTitle.text!, person: favorPerson.text!, description: favorDescription.text, dueDate: datePicker.date)
-        self.ref.child("favor").childByAutoId().setValue(["favor": favor])
+        self.favor = FavorData(title: favorTitle.text!, person: favorPerson.text!, description: favorDescription.text!, dueDate: datePicker.date)
+//        self.ref.child("favor").childByAutoId().setValue(["favorName": favorTitle.text!])
+//        self.ref.child("favor").childByAutoId().setValue(["favorDescription": favorDescription.text!])
+//        self.ref.child("favor").childByAutoId().setValue(["favorTag": favorPerson.text!])
+//        self.ref.child("favor").childByAutoId().setValue(["favorDue": String(datePicker.date)])
         
+        let newFavor = ref.child("favor").childByAutoId()
+        
+        newFavor.setValue(self.favor)
     }
+    
+    
 
 }
