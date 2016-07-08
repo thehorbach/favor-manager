@@ -17,8 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Favor Manager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocp-wh-pL9">
-                                <rect key="frame" x="194" y="280" width="213" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, I'm Favors Manager..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocp-wh-pL9">
+                                <rect key="frame" x="100" y="280" width="400" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="ehO-QC-cR4"/>
+                                    <constraint firstAttribute="height" constant="39" id="ntm-7S-Sie"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -26,8 +30,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ocp-wh-pL9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="q1P-t0-2kB"/>
-                            <constraint firstItem="ocp-wh-pL9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="rsm-aB-JDa"/>
+                            <constraint firstItem="ocp-wh-pL9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hzE-N3-DzQ"/>
+                            <constraint firstItem="ocp-wh-pL9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="r2B-vF-Trj"/>
                         </constraints>
                     </view>
                 </viewController>
