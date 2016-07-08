@@ -17,21 +17,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, I'm Favors Manager..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocp-wh-pL9">
-                                <rect key="frame" x="100" y="280" width="400" height="39"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="400" id="ehO-QC-cR4"/>
-                                    <constraint firstAttribute="height" constant="39" id="ntm-7S-Sie"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="TQH-nk-TgQ">
+                                <rect key="frame" x="152" y="559" width="296" height="21"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Made with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mw4-Gh-UEm">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="21"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="NRS-ph-ncf">
+                                        <rect key="frame" x="91" y="0.0" width="21" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="21" id="66p-RH-1GF"/>
+                                            <constraint firstAttribute="height" constant="21" id="ZsK-Ip-J8o"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="by Slavik, Joe, Jeremy." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hp-Xf-hub">
+                                        <rect key="frame" x="119" y="0.0" width="177" height="21"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4cb-xv-aQ9">
+                                <rect key="frame" x="100" y="220" width="400" height="139"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bucket" translatesAutoresizingMaskIntoConstraints="NO" id="wuA-iV-gGG">
+                                        <rect key="frame" x="150" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Wrs-cx-UFR"/>
+                                            <constraint firstAttribute="width" constant="100" id="zEH-Pm-7V8"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, I'm Favors Manager..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocp-wh-pL9">
+                                        <rect key="frame" x="0.0" y="100" width="400" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="400" id="ehO-QC-cR4"/>
+                                            <constraint firstAttribute="height" constant="39" id="ntm-7S-Sie"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ocp-wh-pL9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hzE-N3-DzQ"/>
-                            <constraint firstItem="ocp-wh-pL9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="r2B-vF-Trj"/>
+                            <constraint firstItem="TQH-nk-TgQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0vL-BE-ifY"/>
+                            <constraint firstItem="4cb-xv-aQ9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="qtT-ii-OTL"/>
+                            <constraint firstItem="4cb-xv-aQ9" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="200" id="rny-Sg-aXH"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -40,4 +77,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Bucket" width="579" height="579"/>
+        <image name="heart" width="635" height="604"/>
+    </resources>
 </document>
