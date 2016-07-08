@@ -17,6 +17,7 @@
 		1172F7BB1D2D79450048CDA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1172F7BA1D2D79450048CDA1 /* Assets.xcassets */; };
 		1172F7BE1D2D79450048CDA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1172F7BC1D2D79450048CDA1 /* LaunchScreen.storyboard */; };
 		1172F7C61D2D7B830048CDA1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1172F7C51D2D7B830048CDA1 /* GoogleService-Info.plist */; };
+		3F12DC1B1D303CA300A2FE96 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12DC1A1D303CA300A2FE96 /* DataService.swift */; };
 		3F7CCF311D2DA1330018D9B4 /* AddFavorsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7CCF2F1D2DA1330018D9B4 /* AddFavorsVC.swift */; };
 		3F7CCF321D2DA1330018D9B4 /* FavorsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7CCF301D2DA1330018D9B4 /* FavorsVC.swift */; };
 		3FD88E481D2F19DA00164E33 /* FavorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD88E471D2F19DA00164E33 /* FavorData.swift */; };
@@ -38,6 +39,7 @@
 		1172F7BD1D2D79450048CDA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1172F7BF1D2D79450048CDA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1172F7C51D2D7B830048CDA1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3F12DC1A1D303CA300A2FE96 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataService.swift; path = "favor-manager/DataService.swift"; sourceTree = SOURCE_ROOT; };
 		3F7CCF2F1D2DA1330018D9B4 /* AddFavorsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFavorsVC.swift; sourceTree = "<group>"; };
 		3F7CCF301D2DA1330018D9B4 /* FavorsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavorsVC.swift; sourceTree = "<group>"; };
 		3FD88E471D2F19DA00164E33 /* FavorData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavorData.swift; path = "favor-manager/FavorData.swift"; sourceTree = SOURCE_ROOT; };
@@ -111,6 +113,7 @@
 		58C3F8161D2EF8C100C98EF8 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				3F12DC1A1D303CA300A2FE96 /* DataService.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				58410A3A1D2DB18D00A1460F /* EmailLogInVC.swift in Sources */,
 				11364FE11D2F05BA0054714B /* FirstVC.swift in Sources */,
 				1172F7B41D2D79450048CDA1 /* AppDelegate.swift in Sources */,
+				3F12DC1B1D303CA300A2FE96 /* DataService.swift in Sources */,
 				3F7CCF321D2DA1330018D9B4 /* FavorsVC.swift in Sources */,
 				3FD88E481D2F19DA00164E33 /* FavorData.swift in Sources */,
 				11364FF31D2F87D20054714B /* EmailSignupVC.swift in Sources */,
