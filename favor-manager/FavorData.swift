@@ -38,4 +38,5 @@ class FavorData {
         self._description = description
         self._dueDate = dueDate
     }
+    
 }

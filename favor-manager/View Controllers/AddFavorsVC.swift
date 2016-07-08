@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class AddFavorsVC: MainViewControllerClass {
     
@@ -18,7 +19,10 @@ class AddFavorsVC: MainViewControllerClass {
     
     var favor: FavorData!
     
+    let ref = FIRDatabase.database().reference()
+    
     let darkColor = UIColor(red: 90.0/255.0, green: 33.0/255.0, blue: 122.0/255.0, alpha: 0.7)
+    
 
     override func viewDidLoad() {
         
@@ -50,7 +54,10 @@ class AddFavorsVC: MainViewControllerClass {
     }
 
     @IBAction func addButtonTapped(sender: AnyObject) {
+        
         self.favor = FavorData(title: favorTitle.text!, person: favorPerson.text!, description: favorDescription.text, dueDate: datePicker.date)
+        self.ref.child("favor").childByAutoId().setValue(["favor": favor])
+        
     }
 
 }
