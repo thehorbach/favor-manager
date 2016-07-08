@@ -12,9 +12,10 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
     
-    @IBOutlet weak var userNameLabel: UILabel!
-    @IBOutlet weak var favorLabel: UILabel!
+    @IBOutlet weak var personNameLabel: UILabel!
+    @IBOutlet weak var favorTitle: UILabel!
     @IBOutlet weak var favorDueDateLabel: UILabel!
+    @IBOutlet weak var favorDescription: UITextView!
 
     
     

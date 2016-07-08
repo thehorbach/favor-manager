@@ -10,16 +10,10 @@ import UIKit
 
 class FavorsVC: MainViewControllerClass {
     
-    @IBOutlet weak var personName: UILabel!
-    @IBOutlet weak var favorName: UILabel!
-    @IBOutlet weak var dueDate: UILabel!
     @IBOutlet weak var tableView: UITableView!
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
     }
 }
