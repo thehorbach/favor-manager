@@ -22,7 +22,7 @@ class FirstVC: UIViewController {
     @IBAction func facebookButtonPressed (sender: AnyObject?) {
         let login: FBSDKLoginManager = FBSDKLoginManager()
         
-        login.logInWithReadPermissions(["public_profile"], fromViewController: self, handler: {(result: FBSDKLoginManagerLoginResult!, error: NSError!) -> Void in
+        login.logInWithReadPermissions(["public_profile", "email"], fromViewController: self, handler: {(result: FBSDKLoginManagerLoginResult!, error: NSError!) -> Void in
             
             if error != nil {
                 print("Process error")
@@ -32,6 +32,14 @@ class FirstVC: UIViewController {
             }
             else {
                 print("Logged in")
+                
+                let credential = FIRFacebookAuthProvider.credentialWithAccessToken(FBSDKAccessToken.currentAccessToken().tokenString)
+                
+                FIRAuth.auth()?.signInWithCredential(credential) {(user, err) in
+                    
+                    self.performSegueWithIdentifier("favorsVCfromFirstVC", sender: self)
+                    
+                }
             }
             
         })

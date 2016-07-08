@@ -95,6 +95,7 @@
                     </view>
                     <connections>
                         <outlet property="facebookButton" destination="IHY-iD-nQH" id="y3u-TJ-Fo5"/>
+                        <segue destination="ZJA-QO-Wcg" kind="show" identifier="favorsVCfromFirstVC" id="A2q-oO-EOF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vF6-Pc-yoi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -618,6 +619,6 @@
         <image name="add" width="299" height="282"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="p1c-Zs-96M"/>
+        <segue reference="A2q-oO-EOF"/>
     </inferredMetricsTieBreakers>
 </document>
