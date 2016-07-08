@@ -10,13 +10,15 @@ import Foundation
 import Firebase
 import UIKit
 
-class TableViewCell: UITableViewCell {
+class TableViewCellCustom: UITableViewCell {
     
     @IBOutlet weak var personNameLabel: UILabel!
     @IBOutlet weak var favorTitle: UILabel!
     @IBOutlet weak var favorDueDateLabel: UILabel!
     @IBOutlet weak var favorDescription: UITextView!
 
-    
+    override func awakeFromNib() {
+         self.selectionStyle = UITableViewCellSelectionStyle.None
+    }
     
 }

@@ -478,7 +478,7 @@
                                 <rect key="frame" x="0.0" y="70" width="600" height="481"/>
                                 <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="favorCell" rowHeight="150" id="3Gf-Yu-dlO" customClass="TableViewCell" customModule="favor_manager" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="favorCell" rowHeight="150" id="3Gf-Yu-dlO" customClass="TableViewCellCustom" customModule="favor_manager" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Gf-Yu-dlO" id="hnR-Kw-O1J">
@@ -718,6 +718,7 @@
                                 </state>
                                 <connections>
                                     <action selector="addButtonTapped:" destination="Hmi-q4-kNA" eventType="touchUpInside" id="8Hu-9c-nYD"/>
+                                    <segue destination="ZJA-QO-Wcg" kind="show" identifier="segueMain" id="p3o-hU-chj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -756,6 +757,6 @@
         <image name="Bucket" width="579" height="579"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="p1c-Zs-96M"/>
+        <segue reference="p3o-hU-chj"/>
     </inferredMetricsTieBreakers>
 </document>

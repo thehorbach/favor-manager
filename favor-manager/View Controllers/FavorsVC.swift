@@ -12,7 +12,7 @@ class FavorsVC: MainViewControllerClass {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var array: [FavorData]!
+    var array = [FavorData]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,16 +26,32 @@ extension FavorsVC: UITableViewDelegate, UITableViewDataSource {
         return 1
     }
     
-    //THIS WILL CHANGE
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return array.count
     }
     
-    //THIS WILL ALSO CHANGE WHEN WE GET DATA
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("favorCell", forIndexPath: indexPath)
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("favorCell", forIndexPath: indexPath) as! TableViewCellCustom
+        let item = array[indexPath.row]
+        
+        cell.favorTitle.text = item.title
+        cell.favorDueDateLabel.text = "\(item.dueDate)"
+        cell.personNameLabel.text = item.person
+        cell.favorDescription.text = item.description
         
         return cell
     }
-
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        
+        //ASK About custom color!!!
+        if editingStyle == .Delete {
+            array.removeAtIndex(indexPath.row)
+            tableView.reloadData()
+        }
+    }
 }
