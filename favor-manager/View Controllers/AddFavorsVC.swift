@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddFavorsVC: UIViewController {
+class AddFavorsVC: MainViewControllerClass {
     @IBOutlet weak var favorTitle: UITextField!
     @IBOutlet weak var favorPerson: UITextField!
     @IBOutlet weak var favorDescription: UITextView!

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import Firebase
 
-class EmailLogInVC: UIViewController{
+class EmailLogInVC: MainViewControllerClass{
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -43,10 +43,5 @@ class EmailLogInVC: UIViewController{
     
     @IBAction func backButton(sender: UIButton) {
         self.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return .LightContent
-    }
-    
+    }    
 }

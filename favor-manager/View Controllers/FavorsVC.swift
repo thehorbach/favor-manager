@@ -8,18 +8,13 @@
 
 import UIKit
 
-class FavorsVC: UIViewController {
+class FavorsVC: MainViewControllerClass {
     
     @IBOutlet weak var personName: UILabel!
     @IBOutlet weak var favorName: UILabel!
     @IBOutlet weak var dueDate: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return .LightContent
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
 

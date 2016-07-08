@@ -11,7 +11,7 @@ import Firebase
 import FBSDKCoreKit
 import FBSDKLoginKit
 
-class FirstVC: UIViewController {
+class FirstVC: MainViewControllerClass {
     
     @IBOutlet weak var facebookButton: UIButton!
     

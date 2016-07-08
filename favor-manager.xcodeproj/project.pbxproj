@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		11364FE11D2F05BA0054714B /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11364FE01D2F05BA0054714B /* FirstVC.swift */; };
+		11364FE51D2F52430054714B /* MainViewControllerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11364FE41D2F52430054714B /* MainViewControllerClass.swift */; };
 		1172F7B41D2D79450048CDA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1172F7B31D2D79450048CDA1 /* AppDelegate.swift */; };
 		1172F7B91D2D79450048CDA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1172F7B71D2D79450048CDA1 /* Main.storyboard */; };
 		1172F7BB1D2D79450048CDA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1172F7BA1D2D79450048CDA1 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		11364FE01D2F05BA0054714B /* FirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		11364FE41D2F52430054714B /* MainViewControllerClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewControllerClass.swift; sourceTree = "<group>"; };
 		1172F7B01D2D79450048CDA1 /* favor-manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "favor-manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1172F7B31D2D79450048CDA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1172F7B81D2D79450048CDA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				58C3F8191D2EF9C800C98EF8 /* TableViewCell.swift */,
+				11364FE41D2F52430054714B /* MainViewControllerClass.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,7 +180,7 @@
 				TargetAttributes = {
 					1172F7AF1D2D79450048CDA1 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = V3842HRTVR;
+						DevelopmentTeam = AC6K9V2C7Z;
 					};
 				};
 			};
@@ -272,6 +275,7 @@
 				3F7CCF321D2DA1330018D9B4 /* FavorsVC.swift in Sources */,
 				3FD88E481D2F19DA00164E33 /* Favor.swift in Sources */,
 				3F7CCF311D2DA1330018D9B4 /* AddFavorsVC.swift in Sources */,
+				11364FE51D2F52430054714B /* MainViewControllerClass.swift in Sources */,
 				58410A3C1D2DBB4200A1460F /* SignUpVC.swift in Sources */,
 				58C3F81A1D2EF9C800C98EF8 /* TableViewCell.swift in Sources */,
 			);
