@@ -20,7 +20,6 @@
 		3F7CCF311D2DA1330018D9B4 /* AddFavorsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7CCF2F1D2DA1330018D9B4 /* AddFavorsVC.swift */; };
 		3F7CCF321D2DA1330018D9B4 /* FavorsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7CCF301D2DA1330018D9B4 /* FavorsVC.swift */; };
 		3FD88E481D2F19DA00164E33 /* FavorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD88E471D2F19DA00164E33 /* FavorData.swift */; };
-		4D3D0EC378F1B1F52D65F1BE /* Pods_favor_manager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29ECF2C6CFAB43819885263 /* Pods_favor_manager.framework */; };
 		58410A3A1D2DB18D00A1460F /* EmailLogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410A391D2DB18D00A1460F /* EmailLogInVC.swift */; };
 		58C3F81A1D2EF9C800C98EF8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C3F8191D2EF9C800C98EF8 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -43,9 +42,6 @@
 		3FD88E471D2F19DA00164E33 /* FavorData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavorData.swift; path = "favor-manager/FavorData.swift"; sourceTree = SOURCE_ROOT; };
 		58410A391D2DB18D00A1460F /* EmailLogInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailLogInVC.swift; sourceTree = "<group>"; };
 		58C3F8191D2EF9C800C98EF8 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		7BCFEB3A2D60562C34DF06F1 /* Pods-favor-manager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-favor-manager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-favor-manager/Pods-favor-manager.debug.xcconfig"; sourceTree = "<group>"; };
-		B29ECF2C6CFAB43819885263 /* Pods_favor_manager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_favor_manager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF3275C01DDF15ABC6BC8ACD /* Pods-favor-manager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-favor-manager.release.xcconfig"; path = "Pods/Target Support Files/Pods-favor-manager/Pods-favor-manager.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +49,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D3D0EC378F1B1F52D65F1BE /* Pods_favor_manager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,8 +60,6 @@
 			children = (
 				1172F7B21D2D79450048CDA1 /* favor-manager */,
 				1172F7B11D2D79450048CDA1 /* Products */,
-				EBC1E27FC8DB9CB501EF2E31 /* Pods */,
-				CE2A8CB0A50F1B50A72295C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,23 +127,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		CE2A8CB0A50F1B50A72295C8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B29ECF2C6CFAB43819885263 /* Pods_favor_manager.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EBC1E27FC8DB9CB501EF2E31 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7BCFEB3A2D60562C34DF06F1 /* Pods-favor-manager.debug.xcconfig */,
-				EF3275C01DDF15ABC6BC8ACD /* Pods-favor-manager.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,12 +134,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1172F7C21D2D79450048CDA1 /* Build configuration list for PBXNativeTarget "favor-manager" */;
 			buildPhases = (
-				CC19C5176EDCD5462BA5ADC7 /* Check Pods Manifest.lock */,
 				1172F7AC1D2D79450048CDA1 /* Sources */,
 				1172F7AD1D2D79450048CDA1 /* Frameworks */,
 				1172F7AE1D2D79450048CDA1 /* Resources */,
-				74B7339B69B708F8DDB2C48E /* Embed Pods Frameworks */,
-				308F1B65FAD433F2D049C95D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,54 +194,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		308F1B65FAD433F2D049C95D /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-favor-manager/Pods-favor-manager-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		74B7339B69B708F8DDB2C48E /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-favor-manager/Pods-favor-manager-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CC19C5176EDCD5462BA5ADC7 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1172F7AC1D2D79450048CDA1 /* Sources */ = {
@@ -398,7 +323,6 @@
 		};
 		1172F7C31D2D79450048CDA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7BCFEB3A2D60562C34DF06F1 /* Pods-favor-manager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -415,7 +339,6 @@
 		};
 		1172F7C41D2D79450048CDA1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF3275C01DDF15ABC6BC8ACD /* Pods-favor-manager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
