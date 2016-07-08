@@ -5,10 +5,10 @@ use_frameworks!
 
 target 'favor-manager' do
 
-pod 'Firebase'
 pod 'Firebase/Core’
 pod 'Firebase/Auth’
 pod 'Firebase/Database'
+
 pod 'FBSDKCoreKit’
 pod 'FBSDKLoginKit’
 
