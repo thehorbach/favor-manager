@@ -362,10 +362,10 @@
             </objects>
             <point key="canvasLocation" x="2564" y="1441"/>
         </scene>
-        <!--Show Favors TableVC-->
+        <!--FavorsVC-->
         <scene sceneID="ahN-Ju-YvD">
             <objects>
-                <viewController id="ZJA-QO-Wcg" customClass="ShowFavorsTableVC" customModule="favor_manager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZJA-QO-Wcg" customClass="FavorsVC" customModule="favor_manager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="73j-f1-ZVL"/>
                         <viewControllerLayoutGuide type="bottom" id="VVq-Zm-dH9"/>

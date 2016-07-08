@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShowFavorsTableVC: UIViewController {
+class FavorsVC: UIViewController {
     
     @IBOutlet weak var personName: UILabel!
     @IBOutlet weak var favorName: UILabel!
@@ -36,7 +36,7 @@ class ShowFavorsTableVC: UIViewController {
     }
 }
 
-extension ShowFavorsTableVC: UITableViewDelegate, UITableViewDataSource {
+extension FavorsVC: UITableViewDelegate, UITableViewDataSource {
     
     // MARK: - Table view data source
     
