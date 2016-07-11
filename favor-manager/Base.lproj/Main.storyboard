@@ -500,7 +500,7 @@
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uV-Fn-ZGx">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uV-Fn-ZGx">
                                                                     <rect key="frame" x="185" y="0.0" width="184" height="42"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="42" id="kjM-0R-84o"/>
@@ -757,6 +757,6 @@
         <image name="Bucket" width="579" height="579"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="p3o-hU-chj"/>
+        <segue reference="A2q-oO-EOF"/>
     </inferredMetricsTieBreakers>
 </document>

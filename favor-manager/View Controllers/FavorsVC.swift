@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class FavorsVC: MainViewControllerClass {
     
@@ -14,9 +15,34 @@ class FavorsVC: MainViewControllerClass {
     
     var array = [FavorData]()
     
+    let postRef = FIRDatabase.database().reference().child("favor")
+    
+    override func viewWillAppear(animated: Bool) {
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        
+        let refHandle = postRef.observeEventType(FIRDataEventType.Value, withBlock: { (snapshot) in
+            
+            if let postDict = snapshot.children.allObjects as? [FIRDataSnapshot] {
+                for post in postDict {
+                    if let post = post.value as? Dictionary<String, String> {
+                        
+                        let specificPost = FavorData(post: post)
+                        self.array.append(specificPost)
+                        
+                    }
+                }
+            }
+            self.tableView.reloadData()
+        })
     }
 }
 
@@ -48,11 +74,11 @@ extension FavorsVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         
         
-        //ASK About custom color!!!
+     /*   //ASK About custom color!!!
         if editingStyle == .Delete {
             array.removeAtIndex(indexPath.row)
             tableView.reloadData()
-        }
+        }*/
     }
 }
 

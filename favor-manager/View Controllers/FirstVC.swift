@@ -20,6 +20,8 @@ class FirstVC: MainViewControllerClass {
     }
     
     @IBAction func facebookButtonPressed (sender: AnyObject?) {
+        
+        
         let login: FBSDKLoginManager = FBSDKLoginManager()
         
         login.logInWithReadPermissions(["public_profile", "email"], fromViewController: self, handler: {(result: FBSDKLoginManagerLoginResult!, error: NSError!) -> Void in

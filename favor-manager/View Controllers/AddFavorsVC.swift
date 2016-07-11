@@ -17,7 +17,7 @@ class AddFavorsVC: MainViewControllerClass {
     
     @IBOutlet weak var datePicker: UIDatePicker!
     
-    var favor: FavorData!
+    // var favor: FavorData!
     
     let ref = FIRDatabase.database().reference()
     
@@ -39,9 +39,9 @@ class AddFavorsVC: MainViewControllerClass {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let favorsVC = segue.destinationViewController as! FavorsVC
+      //  let favorsVC = segue.destinationViewController as! FavorsVC
         
-        favorsVC.array.append(favor)
+        //favorsVC.array.append(favor)
     }
     
     func dismissKeyboard() {
@@ -55,9 +55,11 @@ class AddFavorsVC: MainViewControllerClass {
 
     @IBAction func addButtonTapped(sender: AnyObject) {
         
-        self.favor = FavorData(title: favorTitle.text!, person: favorPerson.text!, description: favorDescription.text!, dueDate: datePicker.date)
+        let date = "\(datePicker.date)"
+    
+        //self.favor = FavorData(title: favorTitle.text!, person: favorPerson.text!, description: favorDescription.text!, dueDate: date)
         
-        self.ref.child("favor").childByAutoId().setValue(["favorDescription": favorTitle.text!, "favorDue": "\(datePicker.date)", "favorNanem": favorTitle.text!, "favorTag": favorPerson.text!])
+        self.ref.child("favor").childByAutoId().setValue(["favorDescription": favorTitle.text!, "favorDue": "\(date)", "favorName": favorTitle.text!, "favorTag": favorPerson.text!])
     }
     
     

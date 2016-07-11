@@ -14,7 +14,7 @@ class FavorData {
     private var _title: String!
     private var _person: String!
     private var _description: String!
-    private var _dueDate: NSDate!
+    private var _dueDate: String!
     private var _key: String!
     
  //   private var _favorRef: Firebase!
@@ -27,7 +27,7 @@ class FavorData {
         return _description
     }
     
-    var dueDate: NSDate! {
+    var dueDate: String! {
         return _dueDate
     }
     
@@ -35,11 +35,20 @@ class FavorData {
         return _person
     }
     
-    init(title: String, person: String, description: String, dueDate: NSDate) {
+    init(title: String, person: String, description: String, dueDate: String) {
         self._title = title
         self._person = person
         self._description = description
         self._dueDate = dueDate
     }
+    
+    init(post: Dictionary<String, String>) {
+        self._title = post["favorTag"]
+        self._person = post["favorName"]
+        self._description = post["favorDescription"]
+        self._dueDate = post["favorDue"]
+    }
+    
+    
 }
 
